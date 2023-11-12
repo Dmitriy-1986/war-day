@@ -7,11 +7,7 @@ const updateTimer = () => {
 
   const daysPassed = Math.floor((endOfDay - startOfDay) / (1000 * 60 * 60 * 24));
 
-  document.getElementById('timer').innerHTML = `<div class='timer-block'>
-                                                    <span>Війна<br> день: 
-                                                        <span class='days-passed'> ${daysPassed}</span>
-                                                    </span>
-                                                </div>`;
+  document.getElementById('timer').innerHTML = `<div class='timer-block'>Війна<br> день: <span class='days-passed'> ${daysPassed}</span></div>`;
 };
 
 setInterval(updateTimer, 1000);
